@@ -88,7 +88,7 @@ gallery.insertAdjacentHTML('afterbegin', createMarkup(images));
 gallery.addEventListener("click", handlerGetImage);
 
 function handlerGetImage(evt) {
-  event.preventDefault();
+  evt.preventDefault();
   if (evt.currentTarget === evt.target) {
     return;
   }
